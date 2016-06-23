@@ -1,6 +1,0 @@
-{
-  "name": "Emsdata - Be Data Driven",
-  "tagline": "",
-  "body": "### How it works?\r\n\r\n- Setup new project in our plaftorm. \r\n- Download data stream client SDK and start sending buisness events to our data lake. \r\n- View data catalogue and explore data you have collected. \r\n- Create cross buisness reports and be Data Driven.",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
