@@ -10,7 +10,7 @@
     <meta name="author" content="getdatadriven.io">
     <meta name="google-site-verification" content="P63RfHBXky9tG1ze9g7sAbhlQ6Lwsd9atckpQfm_jX8" />
 
-    <title>DATA DRIVEN . IO - scalable big data solution as a service</title>
+    <title>GET DATA DRIVEN . IO - scalable big data solution as a service</title>
 
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <!-- Bootstrap Core CSS -->
@@ -60,22 +60,22 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
-                    <a href="#page-top"></a>
+                    <a name="page-top-section" href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#platform">Platform</a>
+                    <a name="platform-section" class="page-scroll" href="#platform">Platform</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#how-it-works">How it works</a>
+                    <a name="how-it-works-section" class="page-scroll" href="#how-it-works">How it works</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#features">Features</a>
+                    <a name="features-section" class="page-scroll" href="#features">Features</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#pricing">Pricing</a>
+                    <a name="pricing-section" class="page-scroll" href="#pricing">Pricing</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a name="contact-section" class="page-scroll" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -88,10 +88,10 @@
 <header>
     <div class="container">
         <div class="intro-text">
-            <div class="intro-heading">data driven . io</div>
+            <div class="intro-heading">get data driven . io</div>
             <div class="intro-lead-in">Looking for scalable big data solution as a service?</div>
             <div class="intro-lead-in">The search is over.</div>
-            <a href="#contact" class="page-scroll btn btn-xl">Try it now</a>
+            <a name="try-it-now" href="#register-modal" data-toggle="modal" class="page-scroll btn btn-xl">Try it now</a>
         </div>
     </div>
 </header>
@@ -160,9 +160,7 @@
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-md-offset-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-success"></i>
                         <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
@@ -200,7 +198,7 @@
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">
-                                    Go to <a href="#contact">registration</a> form, choose project name, provide information about the owner and describe your use cases.
+                                    Go to <a href="#register-modal" name="register-modal" data-toggle="modal">registration</a> form, choose project name, provide information about the owner and describe your use cases.
                                 </p>
                             </div>
                         </div>
@@ -380,7 +378,7 @@
                         <div class="clearfix"></div>
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Send Message</button>
+                            <button name="sending-message" type="submit" class="btn btn-xl">Send Message</button>
                         </div>
                     </div>
                 </form>
@@ -402,6 +400,67 @@
 <!-- Portfolio Modals -->
 <!-- Use the modals below to showcase details about your portfolio projects! -->
 
+<!-- Register modal -->
+<div class="portfolio-modal modal fade" id="register-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>New project</h2>
+                        <form name="registerForm" id="registerForm" novalidate>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Project Name *" id="registerProjectName" required
+                                               data-validation-required-message="Please enter project name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name *" id="registerName" required
+                                               data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email *" id="registerEmail" required
+                                               data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Your Phone *" id="registerPhone" required
+                                               data-validation-required-message="Please enter your phone number.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                <textarea class="form-control" placeholder="Your Use Case *" id="registerUseCase" required
+                                          data-validation-required-message="Please describe your use case."></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="register-success"></div>
+                                    <button name="requesting-new-project" type="submit" class="btn btn-xl btn-primary"> Request</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
 
@@ -416,6 +475,7 @@
 <!-- Contact Form JavaScript -->
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/contact_me.js"></script>
+<script src="js/new_project.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="js/agency.js"></script>
@@ -429,6 +489,14 @@
 
     ga('create', 'UA-79960930-1', 'auto');
     ga('send', 'pageview');
+
+    $('button').click(function(e) {
+        ga('send', 'event', "button-clicked",  $(this).prop('name'));
+    });
+
+    $('a').click(function(e) {
+        ga('send', 'event', "button-clicked", $(this).prop('name'));
+    });
 
 </script>
 </body>

@@ -529,6 +529,45 @@ aside.clients {
 
 // Contact Section
 
+#register-modal {
+	.form-group {
+		margin-bottom: 25px;
+		input,
+		textarea {
+			padding: 20px;
+		}
+		input.form-control {
+			height: auto;
+		}
+		textarea.form-control {
+			height: 340px;
+		}
+	}
+	::-webkit-input-placeholder {
+		.heading-font;
+		font-weight: 700;
+		color: @placeholder-text;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+		.heading-font;
+		font-weight: 700;
+		color: @placeholder-text;
+	}
+	::-moz-placeholder {  /* Firefox 19+ */
+		.heading-font;
+		font-weight: 700;
+		color: @placeholder-text;
+	}
+	:-ms-input-placeholder {
+		.heading-font;
+		font-weight: 700;
+		color: @placeholder-text;
+	}
+	.text-danger {
+		color: @brand-danger;
+	}
+}
+
 section#contact {
 	background-color: @gray-darkest;
 	background-image: url('../img/map-image.png');
